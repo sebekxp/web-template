@@ -1,10 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Noto Sans', sans-serif;
 }
 .carousel {
     position: relative;
 }
-.cont {
+.menu {
     top: 20px;
     position: absolute;
     width: 100%;
@@ -29,31 +32,7 @@ body {
     background-image: url("img/Laptops.jpg");
 }
 
-#navbarMy a{
-    color: #ffffff;
-    font-weight: 700;
-}
-#navbarMy span{
-    margin-right: 3px;
-    color:  rgba(255,255,255,0.8)
-}
-#navbarMy{
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 100px;
-}
-#navbarMy li{
-    margin-left:15px;
-}
-#fb{
-    border-radius: 50%;
-    width: 100%;
-    text-align: right;
-}
-#navbarMy li:first-child a{
-    color: rgb(135,182,114);
-}
-.computer{
+section {
     color: rgb(102, 98, 98);
     padding-top: 40px;
     width: 100%;
@@ -63,10 +42,11 @@ body {
     background: linear-gradient(to bottom, #efefef 0%,#efefef 79%,#ffffff 80%,#ffffff 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
 }
-.computer h5{
-    font-weight: 600;   
+section h5 {
+    font-weight: 600;
+    text-transform: uppercase;   
 }
-.computer p{
+section p {
     color: rgb(153, 151, 151);
     margin-bottom: 50px;
 
@@ -92,9 +72,13 @@ body {
 }
 .nav-item {
     border-bottom: 1.5px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .1s ease-in-out;
 }
 .nav-item:hover {
     border-bottom: 1.5px solid #fff;
+    transform: scale(1.1);
 }
 .nav-item:first-of-type:hover {
     border-bottom: 1.5px solid rgb(135,182,114);
@@ -109,41 +93,27 @@ body {
 }
 .fa-search {
     color: #fff;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 }
+
 .fa-search:hover {
     transform: scale(1.1);
 }
 .carousel-control-next, .carousel-control-prev {
     width: 0;
-    margin: 0 50px;
+    margin: 0 80px;
 }
 
-.logo {
+.text-on-slider {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
     color: #ffffff;
-    /* margin-top: 60px; */
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-}
-@media screen and (max-width: 365px) {
-    .logo {
-     font-size: 26px;
-    }
-    #navbarMy{
-        margin-bottom: 0;
-    }
-    .computer img {
-        width: 100%    ;
-    }
-
-  }
-#threeCont {
-    width: 100%;
-    height: 360px;
-    background-color: brown;
-    display: block;
 }
 p {
     color: #ffffff;
@@ -154,8 +124,9 @@ p {
     margin: auto;
     margin-top: 20px;
 }
-#rectangle {
+.btn-portfolio {
     width: 110px;
+    cursor: pointer;
     height: 35px;
     color: white;
     font-size: 16px;
@@ -165,35 +136,28 @@ p {
     text-align: center;
     margin: auto;
     margin-top: 40px; 
-    padding-top: 4px; 
+    padding-top: 4px;
+    transition: all .1s ease-in-out;
+    text-transform: uppercase;
 }
-#rectangle2 {
-    width: 110px;
-    height: 35px;
-    background-color:rgb(135,182,114);
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 14px;
-    right: 0;
-    left: 0;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
+.btn-portfolio:hover {
+    transform: scale(1.1)
 }
-#rectangle_footer {
+
+.email-form {
     float: left;
     width: 70%;
     height: 35px;
-    color: white;
-    font-size: 16px;
-    background-color: rgb(78, 76, 76);
     left: 0;
     text-align: left;
     padding-top: 4px;
     padding: 5px;
     margin-top: 20px;
+
 }
-#square_footer {
+
+.accept-email {
+    text-transform: uppercase;
     padding: 8px;
     width: 28%;
     height: 35px;
@@ -202,8 +166,35 @@ p {
     background-color: rgb(130, 130, 130);
     margin-top: 20px;
     margin-left: 72%;
+    box-shadow: 3px 3px #232121;
+    cursor: pointer;
+    user-select: none;
 }
-.footer{
+.accept-email:active{
+    box-shadow: 0 0px #232121;
+    transform: translateY(3px);
+}
+#navbarMy a {
+    color: #ffffff;
+    font-weight: 700;
+}
+#navbarMy span {
+    margin-right: 3px;
+    color:  rgba(255,255,255,0.8)
+}
+#navbarMy {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 100px;
+}
+#navbarMy li {
+    margin-left:15px;
+}
+
+#navbarMy li:first-child a {
+    color: rgb(135,182,114);
+}
+footer {
     padding: 60px;
     width: 100%;
     background-color: rgb(51, 51, 51);
@@ -219,14 +210,14 @@ p {
     color: rgb(153, 151, 151);
 }
 .footer_second {
-    /* float: left; */
     text-align: right;
     font-size: 12px;
-    /* width: 16%; */
-    /* margin-left: 30px; */
-    /* padding-left: 30px; */
 }
-.footer_line_bottom {
+.angle-right:hover {
+    transform: translateX(3px);
+    color: #fff;
+}
+footer hr {
     width: 100%;
     height: 1px;
     background-color: rgb(128, 128, 128);
@@ -259,7 +250,7 @@ p {
 .footer_third {
     font-size: 12px;
     margin-top: 10px;
-    color: white;
+    color: rgb(153, 151, 151);
 }
 .footer_third h6{
     font-size: 17px;
@@ -277,35 +268,59 @@ p {
     font-size: 14px;
     color: rgb(153, 151, 151);
 }
-.almostFooter{
+aside {
     text-align: center;
     margin-bottom: 50px;
 }
-.almostFooter p{
+aside p{
     width: 100%;
     color: rgb(102, 98, 98);
     margin-top: 22px;
     margin-bottom: 22px;
 }
-.almostFooter h5{
+aside p:nth-of-type(2) {
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    background-color:rgb(135,182,114);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    right: 0;
+    left: 0;
+    padding: 6.1px 0;;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+    transition: all .1s ease-in-out;
+}
+aside p:nth-of-type(2):hover {
+    transform: scale(1.1)
+}
+aside h5 {
+    color: rgb(102, 98, 98);
+
+    text-transform: uppercase;
     font-weight: 600;
 }
-.logo span{
+.text-on-slider span{
     color: rgb(135,182,114);
     font-weight: 700;
 }
-#nextCont {
+article {
     width: 100%;
     text-align: center;
     margin-top: 89px;
     color: rgb(102, 98, 98);
     padding-top: 30px;
 }
-#nextCont p{
+article p{
     color: rgb(204, 204, 204);
 }
 .icon {
     background-color:#ffffff;
+    cursor: pointer;
     color: rgba(0,0,0,0.5);
     opacity: 0.7;
     height: 30px;
@@ -324,57 +339,50 @@ p {
 .icon:hover {
     transform: scale(1.1);
 }
-hr {
+article hr {
+    width: 100%;
+    height: 1px; 
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.last-hr-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+header hr {
     width: 100%;
     height: 1px;
     background-color: white;
     margin: 0 0;
 }
-.line1{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(204, 204, 204);
-    margin-top: 45px;
-    margin-bottom: 45px;
+
+footer h6 {
+    text-transform: uppercase;
 }
-.line2{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(204, 204, 204);
-    margin-top: 15px;
-    margin-bottom: 45px;
-}
-.footer_line{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(204, 204, 204);
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.s1{
+.service {
     display: block;
-    padding: 10px;
+    padding: 20px;
     width: 33.33%;
     text-align: center;
-    /* float: left; */
+
 }
-@media screen and (max-width: 992px) {
-    .s1 {
-     width: 100%;
-    }
-  }
-.s1 p {
+
+.service p {
     color: rgb(155, 153, 153);
-    font-size: 13px;
+    font-size: 14px;
     font-weight:500; 
 }
-.s1 h5{
-    font-weight: 400;
+.service h5{
+    font-weight: 500;
     color: rgb(102, 98, 98);
     margin-top: 20px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-#nextCont .fas{
+article .fas{
     font-size: 100px;
     color: rgb(185, 183, 183);
 }
@@ -389,3 +397,20 @@ hr {
     margin-top: 45px;
     transform: scale(-1, 1);
 }
+@media screen and (max-width: 992px) {
+    .service {
+         width: 100%;
+        }
+      }
+@media screen and (max-width: 365px) {
+    .text-on-slider {
+     font-size: 26px;
+    }
+    .navbar{
+        margin-bottom: 0;
+    }
+    .computer img {
+        width: 100%    ;
+    }
+
+  }
