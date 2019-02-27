@@ -1,12 +1,15 @@
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
 }
+
 .carousel {
     position: relative;
 }
+
 .menu {
     top: 20px;
     position: absolute;
@@ -16,19 +19,14 @@ body {
     padding: 0 0;
 }
 
-.slide{
+.slide {
     width: 100%;
     height: 500px;
     background-position: center;
     background-size: cover;
 }
-.slide1{
-    background-image: url("img/Laptops.jpg");
-}
-.slide1{
-    background-image: url("img/Laptops.jpg");
-}
-.slide1{
+
+.slide1 {
     background-image: url("img/Laptops.jpg");
 }
 
@@ -42,20 +40,23 @@ section {
     background: linear-gradient(to bottom, #efefef 0%,#efefef 79%,#ffffff 80%,#ffffff 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
 }
+
 section h5 {
     font-weight: 600;
     text-transform: uppercase;   
 }
+
 section p {
     color: rgb(153, 151, 151);
     margin-bottom: 50px;
-
 }
+
 .social-media {
     display: flex;
     justify-content: flex-end;
     align-self: center;
 }
+
 .logotyp {
     display: flex;
     justify-content: space-between;
@@ -70,19 +71,23 @@ section p {
     font-size: 35px;
     color: #ffffff;
 }
+
 .nav-item {
     border-bottom: 1.5px solid transparent;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all .1s ease-in-out;
 }
+
 .nav-item:hover {
     border-bottom: 1.5px solid #fff;
     transform: scale(1.1);
 }
+
 .nav-item:first-of-type:hover {
     border-bottom: 1.5px solid rgb(135,182,114);
 }
+
 .logotyp_icon h4 {
     color: #ffffff;
     text-transform: uppercase;
@@ -91,6 +96,7 @@ section p {
     letter-spacing: 0.3px;
     padding-left: 5px;
 }
+
 .fa-search {
     color: #fff;
     cursor: pointer;
@@ -100,7 +106,9 @@ section p {
 .fa-search:hover {
     transform: scale(1.1);
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 0;
     margin: 0 80px;
 }
@@ -115,6 +123,7 @@ section p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+
 p {
     color: #ffffff;
     font-size: 16px;
@@ -124,6 +133,7 @@ p {
     margin: auto;
     margin-top: 20px;
 }
+
 .btn-portfolio {
     width: 110px;
     cursor: pointer;
@@ -140,6 +150,7 @@ p {
     transition: all .1s ease-in-out;
     text-transform: uppercase;
 }
+
 .btn-portfolio:hover {
     transform: scale(1.1)
 }
@@ -153,7 +164,6 @@ p {
     padding-top: 4px;
     padding: 5px;
     margin-top: 20px;
-
 }
 
 .accept-email {
@@ -170,23 +180,28 @@ p {
     cursor: pointer;
     user-select: none;
 }
-.accept-email:active{
+
+.accept-email:active {
     box-shadow: 0 0px #232121;
     transform: translateY(3px);
 }
+
 #navbarMy a {
     color: #ffffff;
     font-weight: 700;
 }
+
 #navbarMy span {
     margin-right: 3px;
     color:  rgba(255,255,255,0.8)
 }
+
 #navbarMy {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 100px;
 }
+
 #navbarMy li {
     margin-left:15px;
 }
@@ -194,29 +209,35 @@ p {
 #navbarMy li:first-child a {
     color: rgb(135,182,114);
 }
+
 footer {
     padding: 60px;
     width: 100%;
     background-color: rgb(51, 51, 51);
 }
+
 .footer_first {
     text-align: right;
     font-size: 16px;
     color: rgb(132, 131, 131);
 }
-.footer_first p{
+
+.footer_first p {
     text-align: left;
     font-size: 14px;
     color: rgb(153, 151, 151);
 }
+
 .footer_second {
     text-align: right;
     font-size: 12px;
 }
+
 .angle-right:hover {
     transform: translateX(3px);
     color: #fff;
 }
+
 footer hr {
     width: 100%;
     height: 1px;
@@ -224,15 +245,18 @@ footer hr {
     margin-top: 45px;
     margin-bottom: 20px;
 }
-.footer_second h6{
+
+.footer_second h6 {
     text-align: left;
     font-size: 17px;
     color: #ffffff;
 }
+
 .copyright{
     color: rgb(128, 128, 128);
 }
-.copyright span span{
+
+.copyright span {
     color: #ffffff;
     font-weight: 500;
 }
@@ -397,17 +421,32 @@ article .fas{
     margin-top: 45px;
     transform: scale(-1, 1);
 }
+#asd:active .nav-link{
+    background-color: red;
+}
+
 @media screen and (max-width: 992px) {
     .service {
          width: 100%;
         }
       }
 @media screen and (max-width: 365px) {
-    .text-on-slider {
-     font-size: 26px;
-    }
+
+     .text-on-slider{
+        font-size: 24px;
+    } 
     .navbar{
         margin-bottom: 0;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        /* display: none; */
+        margin-bottom: -270px;
+        margin-left: 40px; 
+        margin-right: 40px;
+    }
+    .btn-portfolio {
+        margin-bottom: 50px;
     }
     .computer img {
         width: 100%    ;
