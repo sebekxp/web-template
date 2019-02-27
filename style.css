@@ -147,6 +147,8 @@ p {
     margin: auto;
     margin-top: 40px; 
     padding-top: 4px;
+    text-decoration: none;
+
     transition: all .1s ease-in-out;
     text-transform: uppercase;
 }
@@ -252,7 +254,7 @@ footer hr {
     color: #ffffff;
 }
 
-.copyright{
+.copyright {
     color: rgb(128, 128, 128);
 }
 
@@ -261,47 +263,55 @@ footer hr {
     font-weight: 500;
 }
 
-.footer_second p:last-child{
+.footer_second p:last-child {
     text-align: left;
     font-size: 14px;
     color: #ffffff;
 }
-.footer_second p{
+
+.footer_second p {
     text-align: left;
     font-size: 14px;
     color: rgb(153, 151, 151);
 }
+
 .footer_third {
     font-size: 12px;
     margin-top: 10px;
     color: rgb(153, 151, 151);
 }
-.footer_third h6{
+
+.footer_third h6 {
     font-size: 17px;
     color: #ffffff;
     text-align: left;
 }
+
 .footer_fourth {
     font-size: 12px;
     margin-top: 24px;
     padding-left: 15px;
     color: white;
 }
-.footer_fourth p{
+
+.footer_fourth p {
     text-align: left;
     font-size: 14px;
     color: rgb(153, 151, 151);
 }
+
 aside {
     text-align: center;
     margin-bottom: 50px;
 }
-aside p{
+
+aside p {
     width: 100%;
     color: rgb(102, 98, 98);
     margin-top: 22px;
     margin-bottom: 22px;
 }
+
 aside p:nth-of-type(2) {
     text-transform: uppercase;
     width: 110px;
@@ -319,19 +329,22 @@ aside p:nth-of-type(2) {
     margin: auto;
     transition: all .1s ease-in-out;
 }
+
 aside p:nth-of-type(2):hover {
     transform: scale(1.1)
 }
+
 aside h5 {
     color: rgb(102, 98, 98);
-
     text-transform: uppercase;
     font-weight: 600;
 }
-.text-on-slider span{
+
+.text-on-slider span {
     color: rgb(135,182,114);
     font-weight: 700;
 }
+
 article {
     width: 100%;
     text-align: center;
@@ -339,9 +352,11 @@ article {
     color: rgb(102, 98, 98);
     padding-top: 30px;
 }
-article p{
+
+article p {
     color: rgb(204, 204, 204);
 }
+
 .icon {
     background-color:#ffffff;
     cursor: pointer;
@@ -369,6 +384,7 @@ article hr {
     margin-top: 45px;
     margin-bottom: 45px;
 }
+
 .last-hr-line {
     width: 100%;
     height: 1px;
@@ -376,6 +392,7 @@ article hr {
     margin-top: 30px;
     margin-bottom: 35px;
 }
+
 header hr {
     width: 100%;
     height: 1px;
@@ -386,6 +403,7 @@ header hr {
 footer h6 {
     text-transform: uppercase;
 }
+
 .service {
     display: block;
     padding: 20px;
@@ -399,6 +417,7 @@ footer h6 {
     font-size: 14px;
     font-weight:500; 
 }
+
 .service h5{
     font-weight: 500;
     color: rgb(102, 98, 98);
@@ -406,23 +425,23 @@ footer h6 {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 article .fas{
     font-size: 100px;
     color: rgb(185, 183, 183);
 }
+
 .next {
     font-size: 45px;
     color: white;
     margin-top: 45px;
 }
+
 .prev {
     font-size: 45px;
     color: white;
     margin-top: 45px;
     transform: scale(-1, 1);
-}
-#asd:active .nav-link{
-    background-color: red;
 }
 
 @media screen and (max-width: 992px) {
@@ -438,15 +457,17 @@ article .fas{
     .navbar{
         margin-bottom: 0;
     }
+    .fa-search {
+        margin-left: 16px;
+    }
     .carousel-control-next,
     .carousel-control-prev {
-        /* display: none; */
-        margin-bottom: -270px;
-        margin-left: 40px; 
-        margin-right: 40px;
+        margin-bottom: -350px;
+        margin-left: 80px; 
+        margin-right: 80px;
     }
     .btn-portfolio {
-        margin-bottom: 50px;
+        margin-top: 30px;
     }
     .computer img {
         width: 100%    ;
