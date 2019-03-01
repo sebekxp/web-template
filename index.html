@@ -5,198 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Naprawa Laptopów</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Common Words</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+    <h1>MOST COMMON WORDS IN ENGLISH</h1>
+    <input id="search-box" class="search-box" placeholder="Search.." title="Type word to find">
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="slide slide1"></div>
+    <section>
+        <div class="list-of-words">
+            <nav>
+                <div class="progresBar" id="progresBar">
+                    <div class="progBar" id="progBar"></div>
+                </div>
+                <span>30% Complete</span>
+            </nav>
+            
+            <div class="word-title" onmouseover="openWord('a1')">
+                <p class="w1 far fa-circle"></p>
+                <p class="words">a</p>
             </div>
-            <div class="carousel-item">
-                <div class="slide slide1"></div>
+            <div class="word-title" onmouseover="openWord('a2')">
+                <p class="w2 far fa-circle"></p>
+                <p class="words">ability</p>
             </div>
-            <div class="carousel-item">
-                <div class="slide slide1"></div>
+            <div class="word-title" onmouseover="openWord('a3')">
+                <p class="w3 far fa-circle"></p>
+                <p class="words">able</p>
+            </div>
+            <div class="word-title" onmouseover="openWord('a4')">
+                <p class="w4 far fa-circle"></p>
+                <p class="words">about</p>
+            </div>
+            <div class="word-title">
+                <p class="w5 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a5')">above</p>
+            </div>
+            <div class="word-title">
+                <p class="w6 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a6')">accept</p>
+            </div>
+            <div class="word-title">
+                <p class="w7 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a7')">according</p>
+            </div>
+            <div class="word-title">
+                <p class="w8 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a8')">account</p>
+            </div>
+            <div class="word-title">
+                <p class="w9 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a9')">across</p>
+            </div>
+            <div class="word-title">
+                <p class="w10 far fa-circle"></p>
+                <p class="words" onmouseover="openWord('a10')" class="words">act</p>
             </div>
         </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <i class="fas fa-chevron-circle-right prev" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <i class="fas fa-chevron-circle-right next" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-        </a>
-
-    </div>
-
-    <header class="container menu">
-        <header class="logotyp">
-             <div class="logotyp_icon">
-                <i class="fas fa-laptop"></i>
-                <h4>naprawa<br><span>laptopów</span></h4>
-            </div>
-
-            <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></i></a>
-                <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-            </div>
-        </header>
-
-        <hr>
-
-        <nav class="navbar navbar-expand-lg navbar-dark" id="navbarMy">
-            <button id="btn-hamb" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#n-naprawa">zleć naprawę<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#o-nas">o nas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#s-serwis">serwis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#k-kontakt">kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#a-archiwum">archiwum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">cennik</a>
-                    </li>
-                </ul>
-                <i class="fas fa-search"></i>
-            </div>
-        </nav>
-        <div class="hide-when-mibile">
-            <p class="text-on-slider">specjalizujemy sie w <span>naprawie</span> laptopów</p>
-            <p>Sprawdź nasze portfolio i zobacz naszą pracę!</p>
-            <p class="btn-portfolio">portfolio</p>
+        <div id="a1" class="word-content">
+            <h2>a</h2>
+            <p>przedimek nieokreślony używany z rzeczownikami policzalnymi w liczbie pojedynczej,
+                których wymowa zaczyna się od spółgłoski</p>
+            <p>Is there a problem? - Czy jest jakiś problem?</p>
+            <p>You have a job. - Ty masz pracę.</p>
+            <p> He needs a dollar. - On potrzebuje dolara.</p>
         </div>
-    </header>
 
-    <div class="container">
-        <article id="o-nas">
-            <h3>Jesteśmy małym zespołem robiącym wielkie rzeczy!</h3>
-            <p>Jesteśmy przygotowani na naprawę każdego laptopa. Obojętnie czy jest to laptop marki Sony, Acer, Asus, HP, Toshiba, Dell, Samsung lub Lenovo. Odpowiednie zaplecze ludzkie i sprzętowe pozwala nam zapewnić fachowy serwis dla każdego modelu i każdej serii laptopa.</p>
-            <hr>
-            <div class="d-flex flex-column flex-md-row" id="s-serwis">
-                <div class="service">
-                    <i class="fas fa-cogs"></i>
-                    <h5>szybka naprawa</h5>
-                    <p>Potrzebujesz swojego laptopa „na wczoraj". W określonych przypadkach jesteśmy w stanie naprawić twojego laptopa w 24 godziny!</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-users"></i>
-                    <h5>zadowoleni klienci</h5>
-                    <p>Tysiące zadowolonych klientów! Nie zwlekaj ze zleceniem nam naprawy swojego laptopa, spróbuj i dołącz do grona zadowolonych klientów.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-signal"></i>
-                    <h5>gwarancja 356 dni</h5>
-                    <p>Liczy się dla Ciebie pewność, że laptop będzie sprawnie działał po zakończonej naprawie? Mamy dla Ciebie gwarancję nawet na 365 dni.</p>
-                </div>
-            </div>
-        </article>
-    </div>
-    
-    <section id="a-archiwum">
-        <h5>z nami wrócisz do działania!</h5>
-        <p>Czy stać Cię na zaniesienie laptopa do nieznanego serwisu? Mamy wyspecjalizowany<br> zespół i zaplecze, które gwarantuje skuteczną i szybką naprawę laptopa. Pisemna gwarancja obejmuje 365 dni.</p>
-        <img src="img/1.png" alt="Computer image">
-        <img src="img/2.png" alt="Computer image">
-        <img src="img/3.png" alt="Computer image">
+        <div id="a2" class="word-content">
+            <h3>ability</h3>
+            <p>umiejętność, zdolność</p>
+            <p>You have an ability to problem-solve. - Masz zdolność do rozwiązywania problemów.</p>
+        </div>
+
+        <div id="a3" class="word-content">
+            <h3>able</h3>
+            <p>zdolny (do czegoś)</p>
+        </div>
+        <div id="a4" class="word-content">
+            <h3>about - około, mniej więcej</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a5" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a6" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a7" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a8" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a9" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+        <div id="a10" class="word-content">
+            <h3>Trzy</h3>
+            <p>Trzecie najczesciej uzywane slowko</p>
+        </div>
+
+
     </section>
 
-    <div class="container">
-        <hr class="last-hr-line">
-        <aside id="n-naprawa">
-            <h5>podoba ci się nasza oferta?</h5>
-            <p>Omówimy z Tobą szczegóły uszkodzenia oraz sposób dostarczenia laptopa do serwisu, abyśmy mogli dokonać bezpłatnej diagnozy i wyceny. Skontaktuj się, być może będziemy w stanie pomóc Ci przez telefon!</p>
-            <p>naprawa</p>
-        </aside>
-    </div>
+    <script src="scrp.js"></script>
 
-    <footer id="k-kontakt">
-        <div class="container">
-            <div class="row">
-                <div class="footer_first col-sm-6 col-lg-5">
-                    <div class="d-flex justify-content-end">
-                        <div class="icon"><i class="fab fa-facebook-f"></i></div>
-                        <div class="icon"><i class="fas fa-wifi"></i></div>
-                        <div class="icon"><i class="fab fa-twitter"></i></div>
-                    </div>
-                    <p>Dodaj nasze strony do ulubionych, aby dołączyć do naszych społeczności i otrzymywać aktualne wiadomości wyświetlające się bezpośrednio na Twojej tablicy.</p>
-                </div>
 
-                <div class="footer_second col-sm-6 col-lg-2 pl-lg-3">
-                    <h6>kontakt</h6>
-                    <p>31-155 Kraków<br> Kraków, Nowa Huta<br> Polska<br>info@nlaptopow.pl</p>
-                    <p>456 123 987</p>
-                </div>
-                <div class="footer_third col-sm-6 col-lg-2 mt-4 mt-lg-0">
-                    <h6>usugi</h6>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Naprawa płyty głównej</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Czyszczenie po zalaniu</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Wymiana matrycy</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Wymiana układu BGA</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Wymiana klawiatury</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Wymiana obudowy</i></div>
-                    <div class="angle-right"><i class="fas fa-angle-right pt-2"> Instalacja systemu</i></div>
-                </div>
-                <div class="footer_fourth col-sm-6 col-lg-3 mt-4 mt-lg-0">
-                    <h6>newsletter</h6>
-                    <p>Wyślij nam wiadomość wyślemy Ci naszą ofertę.</p>
-                    <form>
-                        <input type="email" name="email" placeholder="E-mail:" class="email-form">
-                    </form>
-                    <div class="accept-email">ok</div>
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between copyright w-100 text-center" style="text-transform: uppercase">
-                    <span>copyright 2019<span> naprawa laptopów</span>. wszelkie prawa zastrzeżone.</span> 
-                    <span class="mt-3 mt-md-0">o nas / polityka prywatności / kontakt</span>
-                </div>
-                <p class="fl_right">Thanks to <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script>
-        document.querySelector('#btn-hamb').addEventListener('click', () => {
-            if (document.querySelector('.hide-when-mibile').style.display != 'none') {
-                document.querySelector('.hide-when-mibile').style.display = "none";
-            }
-            else
-                document.querySelector('.hide-when-mibile').style.display = "block";
-        });
-    </script>
 </body>
 
 </html>
