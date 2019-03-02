@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Common Words</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,55 +16,62 @@
     <input id="search-box" class="search-box" placeholder="Search.." title="Type word to find">
 
     <section>
-        <div class="list-of-words">
+        <aside>
             <nav>
                 <div class="progresBar" id="progresBar">
                     <div class="progBar" id="progBar"></div>
                 </div>
-                <span>30% Complete</span>
+                <span id="complete">0 %</span>
             </nav>
-            
-            <div class="word-title" onmouseover="openWord('a1')">
-                <p class="w1 far fa-circle"></p>
-                <p class="words">a</p>
+            <div class="list-of-words">
+                <div class="word-title" onmouseover="openWord('a1')">
+                    <p class="w1 far fa-circle"></p>
+                    <p class="words">a</p>
+                </div>
+                <div class="word-title" onmouseover="openWord('a2')">
+                    <p class="w2 far fa-circle"></p>
+                    <p class="words">ability</p>
+                </div>
+                <div class="word-title" onmouseover="openWord('a3')">
+                    <p class="w3 far fa-circle"></p>
+                    <p class="words">able</p>
+                </div>
+
+                <!-- <div class="word-title" onmouseover="openWord('a4')">
+                    <p class="w4 far fa-circle"></p>
+                    <p class="words">about</p>
+                </div>
+                <div class="word-title">
+                    <p class="w5 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a5')">above</p>
+                </div>
+                <div class="word-title">
+                    <p class="w6 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a6')">accept</p>
+                </div>
+                <div class="word-title">
+                    <p class="w7 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a7')">according</p>
+                </div>
+                <div class="word-title">
+                    <p class="w8 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a8')">account</p>
+                </div>
+                <div class="word-title">
+                    <p class="w9 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a9')">across</p>
+                </div>
+                <div class="word-title">
+                    <p class="w10 far fa-circle"></p>
+                    <p class="words" onmouseover="openWord('a10')" class="words">act</p>
+                </div> -->
             </div>
-            <div class="word-title" onmouseover="openWord('a2')">
-                <p class="w2 far fa-circle"></p>
-                <p class="words">ability</p>
+            <div class="add-btn">
+                <p class="fas fa-plus-circle add-element"></p>
+                    <input type="text" placeholder="add name" class="inputName">
             </div>
-            <div class="word-title" onmouseover="openWord('a3')">
-                <p class="w3 far fa-circle"></p>
-                <p class="words">able</p>
-            </div>
-            <div class="word-title" onmouseover="openWord('a4')">
-                <p class="w4 far fa-circle"></p>
-                <p class="words">about</p>
-            </div>
-            <div class="word-title">
-                <p class="w5 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a5')">above</p>
-            </div>
-            <div class="word-title">
-                <p class="w6 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a6')">accept</p>
-            </div>
-            <div class="word-title">
-                <p class="w7 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a7')">according</p>
-            </div>
-            <div class="word-title">
-                <p class="w8 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a8')">account</p>
-            </div>
-            <div class="word-title">
-                <p class="w9 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a9')">across</p>
-            </div>
-            <div class="word-title">
-                <p class="w10 far fa-circle"></p>
-                <p class="words" onmouseover="openWord('a10')" class="words">act</p>
-            </div>
-        </div>
+        </aside>
+
 
         <div id="a1" class="word-content">
             <h2>a</h2>
@@ -112,8 +120,6 @@
             <h3>Trzy</h3>
             <p>Trzecie najczesciej uzywane slowko</p>
         </div>
-
-
     </section>
 
     <script src="scrp.js"></script>
